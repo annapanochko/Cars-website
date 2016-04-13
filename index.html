@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maserati</title>
+	<link rel="stylesheet" href="mine.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header"><img src="images/Header.png" alt="Шапка"></div>
+		<div id="content">
+        
+        
+        <!-- nav start -->
+			<div id="nav">
+				<ul>
+					<li><a title="На головну" href="index.html" target="_self"><img src="images/Logo.jpg" alt="Логотип"></a></li>
+					<li><a href="Ghibli.html" title="Ghibli">Ghibli</a></li>
+					<li><a href="Quattroporte.html" title="Quattroporte">Quattroporte</a></li>
+					<li><a href="GranTurismo.html" title="GranTurismo">GranTurismo</a></li>
+				</ul>
+				<div id="map"><img src="images/Map.jpg" alt="Карта"></div>
+			</div>	
+         <!-- nav end -->   	
+                
+                	
+			<div id="main">
+				<table>
+					<tr>
+						<th id="main_title" colspan="3"><h1>Главная</h1></th>
+					</tr>
+					<tr>
+						<td class="small_card">
+							<img src="images/Ghibli.jpg" alt="Ghibli">
+							<div class="content">
+								<small>Бизнес класс</small>
+								<h2>Ghibli</h2>
+								<p>Maserati Ghibli III - седан бизнес класса итальянской компании Maserati, который поступил в продажу во второй половине 2013</p>
+								<a href="Ghibli.html" title="Ghibli">Перейти</a>
+							</div>
+						</td>
+						<td class="small_card">
+							<img src="images/Quatro.jpg" alt="Quattroporte">
+							<div class="content">
+								<small>Представительский класс</small>
+								<h2>Quattroporte</h2>
+								<p>Maserati Quattroporte - спортивній полноразмерній седан класса люкс, которые изготовляются итальянской компании Maserati с 1963</p>
+								<a href="Quattroporte.html" title="Quattroporte">Перейти</a>
+							</div>
+						</td>
+						<td class="small_card">
+							<img src="images/Grand.jpg" alt="GranTurismo">
+							<div class="content">
+								<small>Купе</small>
+								<h2>GranTurismo</h2>
+								<p>Maserati GranTurismo - автомобиль класса Гран Туризмо итальянской компании Maserati. Общественности был представлен в марте 2007 года на Женевском автосалоне.</p>
+								<a href="GranTurismo.html" title="GranTurismo">Перейти</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="big_card" colspan="3">
+							<img src="images/Form.png" alt="Форма"/>
+							<form action="/Home/Order" method="post">
+								<fieldset>
+									<legend>Оформление заказа</legend>
+									<input type="text" name="Name" placeholder="Введите ваше имя" required/><br>
+									<input type="tel" name="Tel" placeholder="8-(xxx)-(xxx)-(xxxx)" required pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{4}"/><br/>
+									<select name="Car">
+										<option value="Ghibli">Ghibli</option>
+										<option value="Quattroporte">Quattroporte</option>
+										<option value="GranTurismo">GranTurismo</option>
+									</select>
+									<input type="submit">
+								</fieldset>
+							</form>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="footer"><h2>Copyrite</h2></div>
+	</div>	
+</body>
+</html>
